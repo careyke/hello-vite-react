@@ -1,6 +1,12 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 
-const root = document.querySelector('#root')
+import { add } from "@/utils";
+import classes from "./index.module.less";
 
-ReactDOM.render(<div>hello vite</div>,root)
+const root = document.querySelector("#root");
+
+ReactDOM.render(
+  <div className={classes.container}>Hello Vite {add(1, 2)}</div>,
+  root
+);
